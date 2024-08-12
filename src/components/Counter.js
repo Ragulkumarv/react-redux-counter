@@ -12,7 +12,7 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   const handleInput = (e) => {
-    dispatch(setInputValue(e.target.value));
+    dispatch(setInputValue(Number(e.target.value)));
   };
   return (
     <div>
