@@ -17,6 +17,7 @@ const counterSlice = createSlice({
       state.counter = 0;
     },
     setInputValue: (state, action) => {
+      //to get the current value update the input while typing
       state.inputValue = action.payload;
     },
   },

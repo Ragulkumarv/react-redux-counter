@@ -12,6 +12,7 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   const handleInput = (e) => {
+    //to update the store with the current keyed value in reducer inputValue
     dispatch(setInputValue(Number(e.target.value)));
   };
   return (
